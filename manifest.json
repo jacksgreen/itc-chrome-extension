@@ -8,13 +8,22 @@
     },
     "content_scripts": [
         {
-            "matches": [ "<all_urls>" ],
-            "js": [ "content.js"]
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "content.js"
+            ]
         }
     ],
     "browser_action": {
         "default_popup": "popup.html",
         "default_title": "Free Ride"
+    },
+    "background": {
+        "scripts": [
+            "background.js"
+        ]
     },
     "content_security_policy": "script-src 'self' https://unpkg.com https://unpkg.com; object-src 'self'"
 }
