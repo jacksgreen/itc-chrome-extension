@@ -4,7 +4,7 @@
     "description": "Sit back and let the driver do the work.",
     "version": "1.0",
     "icons": {
-        "128": "chrome_icon.png"
+        "128": "tree_icon.png"
     },
     "content_scripts": [
         {
