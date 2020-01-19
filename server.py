@@ -17,7 +17,7 @@ def hello():
 
 @app.route('/icon', methods=['GET'])
 def get_icon():
-    return {"icon": str(random.randint(1, 2))}
+    return {"icon": str(random.randint(3, 10))}
 
 
 @app.route('/data', methods=['GET'])

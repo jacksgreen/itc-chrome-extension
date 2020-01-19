@@ -17,5 +17,4 @@ async function getUrl(res) {
     img.src = response.data;
 }
 
-
 document.addEventListener('DOMContentLoaded', handleOnLoad)
