@@ -27,7 +27,7 @@ def get_data():
     soup = BeautifulSoup(response.content, 'html.parser')
     img = soup.find("img")
     src = img["src"]
-    return src
+    return json.dumps({"src": src})
 
 
 if __name__ == "__main__":
