@@ -1,3 +1,4 @@
+
 function handleOnLoad() {
     chrome.tabs.query({ currentWindow: true, active: true }, tabs => {
         chrome.tabs.sendMessage(tabs[0].id, 'give me url', getUrl)
