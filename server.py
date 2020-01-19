@@ -19,7 +19,7 @@ def get_data():
     url = request.args.get('url')
     response = requests.get(url)
     soup = BeautifulSoup(response.content, 'html.parser')
-    img = soup.find("img", class_="media_image_link")
+    img = soup.find("img")
     src = img["src"]
     return src
 
