@@ -1,7 +1,6 @@
-chrome.runtime.onMessage.addListener(function (msg, sender, sendResponse) {
-    if (msg.action === "updateIcon") {
-        if (msg.value) {
-            chrome.browserAction.setIcon({path: "./one.png"});
-        }
-    }
-});
+chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
+    chrome.tabs.query({ active: true, windowType: "normal", currentWindow: true }, (d) => {
+        let tabId = d[0].id;
+        chrome.browserAction.setIcon({ path: `./numbers/${msg.icon}.png`, tabId: tabId });
+    })
+})

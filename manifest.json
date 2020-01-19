@@ -21,9 +21,7 @@
         "default_title": "Free Ride"
     },
     "background": {
-        "scripts": [
-            "background.js"
-        ]
+        "scripts": [ "background.js" ]
     },
     "content_security_policy": "script-src 'self' https://unpkg.com https://unpkg.com; object-src 'self'"
 }
