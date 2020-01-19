@@ -4,6 +4,7 @@ from bs4 import BeautifulSoup
 import json
 import os
 import requests
+import random
 
 app = Flask(__name__)
 CORS(app)
@@ -12,6 +13,11 @@ CORS(app)
 @app.route('/', methods=['GET'])
 def hello():
     return "<h2>Scraping server</h2>"
+
+
+@app.route('/icon', methods=['GET'])
+def get_icon():
+    return {"icon": str(random.randint(1, 2))}
 
 
 @app.route('/data', methods=['GET'])

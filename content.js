@@ -1,6 +1,10 @@
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
-  sendResponse({url: window.location.href})
-  // chrome.browserAction.setIcon({path:"./one.png"})
+  sendResponse({ url: window.location.href })
 })
 
-chrome.runtime.sendMessage({ "newIconPath" : "./one.png" });
+async function getIcon() {
+  const response = await fetch("http://127.0.0.1:2700/icon");
+  const myJson = await response.json()
+  chrome.runtime.sendMessage({ icon: myJson.icon })
+}
+getIcon()
