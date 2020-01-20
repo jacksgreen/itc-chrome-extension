@@ -1,6 +1,6 @@
 {
     "manifest_version": 2,
-    "name": "Free Ride",
+    "name": "EF it",
     "description": "Sit back and let the driver do the work.",
     "version": "1.0",
     "icons": {
@@ -9,7 +9,7 @@
     "content_scripts": [
         {
             "matches": [
-                "<all_urls>"
+                "https://www.amazon.com/*"
             ],
             "js": [
                 "content.js"
@@ -18,7 +18,7 @@
     ],
     "browser_action": {
         "default_popup": "popup.html",
-        "default_title": "Free Ride"
+        "default_title": "EF it"
     },
     "background": {
         "scripts": [ "background.js" ]
