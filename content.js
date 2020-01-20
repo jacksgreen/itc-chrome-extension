@@ -1,5 +1,7 @@
 async function getIcon() {
+  chrome.runtime.sendMessage({ icon: "loader" })
   const response = await fetch(`${server}/icon`);
+  
   const myJson = await response.json()
   chrome.runtime.sendMessage({ icon: myJson.icon })
 }
