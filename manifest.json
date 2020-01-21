@@ -9,7 +9,7 @@
     "content_scripts": [
         {
             "matches": [
-                "https://www.amazon.com/*"
+                "https://www.amazon.com/*", "https://www.amazon.co.uk/*"
             ],
             "js": [
                 "content.js"
