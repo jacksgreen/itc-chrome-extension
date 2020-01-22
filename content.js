@@ -13,7 +13,7 @@ async function getData() {
 }
 
 const server = "http://127.0.0.1:2700"
-// const server = 'https://itc-chrome-extension-server.herokuapp.com';
+//const server = 'https://itc-chrome-extension-server.herokuapp.com';
 getIcon();
 const response = getData();
 

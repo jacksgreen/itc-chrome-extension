@@ -18,5 +18,7 @@ const websiteBtn = document.getElementById('website-button');
 websiteBtn.addEventListener('click', handleWebsiteRedirect)
 
 function handleWebsiteRedirect() {
-    window.open("https://wingspan-1.firebaseapp.com/")
+    //website = "https://wingspan-1.firebaseapp.com/"
+    website = "http://127.0.0.1:3000"
+    window.open(website)
 }
