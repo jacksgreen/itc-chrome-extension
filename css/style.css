@@ -33,6 +33,8 @@ h3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0 10px;
+  text-align: center;
 }
 
 #website-button {
@@ -41,8 +43,11 @@ h3 {
 }
 
 .title-wingspan-wrap {
-  /* background-image: url(../images/leaves-white-background.jpg);
-  background-repeat: no-repeat; */
   border-radius: 5px;
   padding: 5px 10px 0 10px;
+}
+
+.hintMsg {
+  margin: 5px 0 10px 0;
+  font-size: 10px;
 }
