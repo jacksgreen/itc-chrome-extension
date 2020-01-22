@@ -8,10 +8,11 @@
   },
   "content_scripts": [
     {
-      "matches": ["https://www.amazon.com/*"],
+      "matches": ["https://www.amazon.com/*", "https://www.amazon.co.uk/*"],
       "js": ["content.js"]
     }
   ],
+  "permissions": ["activeTab"],
   "browser_action": {
     "default_popup": "popup.html",
     "default_title": "WingSpan"

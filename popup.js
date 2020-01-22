@@ -13,4 +13,10 @@ function displayData(res) {
     document.body.append(img)
 }
 
-document.addEventListener('DOMContentLoaded', handleOnLoad)
+document.addEventListener('DOMContentLoaded', handleOnLoad);
+const websiteBtn = document.getElementById('website-button');
+websiteBtn.addEventListener('click', handleWebsiteRedirect)
+
+function handleWebsiteRedirect() {
+    window.open("https://wingspan-1.firebaseapp.com/")
+}
