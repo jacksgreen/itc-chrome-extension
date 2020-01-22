@@ -5,9 +5,7 @@ function handleOnLoad() {
 }
 
 function displayData(res) {
-    const div = document.createElement('div')
-    div.textContent = "url: " + res.url;
-    document.body.append(div);
+
 }
 
 document.addEventListener('DOMContentLoaded', handleOnLoad);

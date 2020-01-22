@@ -10,3 +10,7 @@
     align-items: center;
     justify-content: space-around;
 }
+.product-image {
+    height: 100px;
+    width: auto;
+}
