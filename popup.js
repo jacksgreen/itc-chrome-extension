@@ -8,9 +8,6 @@ function displayData(res) {
     const div = document.createElement('div')
     div.textContent = "url: " + res.url;
     document.body.append(div);
-    img = document.createElement('img')
-    img.src = res.src;
-    document.body.append(img)
 }
 
 document.addEventListener('DOMContentLoaded', handleOnLoad);

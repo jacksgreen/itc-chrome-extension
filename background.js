@@ -11,7 +11,8 @@ chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
                     loader++
                 }
             }
+        } else {
+            chrome.browserAction.setIcon({ path: `./numbers/${msg.icon}.png`, tabId: tabId });
         }
-        chrome.browserAction.setIcon({ path: `./numbers/${msg.icon}.png`, tabId: tabId });
     })
 })
