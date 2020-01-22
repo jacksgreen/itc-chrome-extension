@@ -9,13 +9,26 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  font-family: 'Nunito', sans-serif;
+  margin: 20px 0;
 }
 .product-image {
   height: 100px;
   width: auto;
 }
 
+h3 {
+  font-family: 'Nunito', sans-serif;
+}
+
 #content-box {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#website-button {
+  background-color: #606e60 !important;
+  border: none;
 }
