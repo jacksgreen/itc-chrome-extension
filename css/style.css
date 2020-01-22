@@ -1,16 +1,21 @@
 .loading-img {
-    height: 50px;
-    width: 50px;
+  height: 50px;
+  width: 50px;
 }
 .popup-container {
-    height: 200px;
-    width: 250px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+  height: 200px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 .product-image {
-    height: 100px;
-    width: auto;
+  height: 100px;
+  width: auto;
+}
+
+#content-box {
+  display: flex;
+  flex-direction: column;
 }
