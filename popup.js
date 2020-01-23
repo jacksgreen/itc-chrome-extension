@@ -19,8 +19,7 @@ function checkHighScore(main, test1, test2, test3) {
   } else {
     result = document.createElement('div');
     result.classList.add('hintMsg');
-    result.textContent =
-      "We've found products that are more environmentally-friendly for you!";
+    result.textContent = 'We like your product!';
     box.append(result);
   }
 }
