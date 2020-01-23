@@ -1,8 +1,8 @@
 async function getIcon() {
-  chrome.runtime.sendMessage({ icon: "loader" })
-  const response = await fetch(`${server}/icon`);
+  chrome.runtime.sendMessage({ icon: 'loader' });
+  const response = await fetch(`${server}/`);
   const myJson = await response.json();
-  chrome.runtime.sendMessage({ icon: myJson.icon });
+  chrome.runtime.sendMessage({ icon: myJson.mainProduct.ecoscore.toFixed(0) });
 }
 
 async function getData() {
@@ -12,7 +12,7 @@ async function getData() {
   return myJson;
 }
 
-const server = "http://127.0.0.1:2700"
+const server = 'http://127.0.0.1:2700';
 //const server = 'https://itc-chrome-extension-server.herokuapp.com';
 getIcon();
 const response = getData();

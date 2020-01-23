@@ -9,7 +9,7 @@ body {
   width: 50px;
 }
 .popup-container {
-  height: 200px;
+  height: 300px;
   width: 250px;
   display: flex;
   flex-direction: column;
