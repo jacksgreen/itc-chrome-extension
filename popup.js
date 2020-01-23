@@ -53,8 +53,12 @@ function displayData(res) {
   box.append(weight);
 
   ecoscore = document.createElement('div');
+<<<<<<< HEAD
   ecoscore.textContent =
     'WingSpan: ' + res.data.mainProduct.ecoscore.toFixed(0);
+=======
+  ecoscore.textContent = 'WingSpan: ' + res.data.mainProduct.ecoscore;
+>>>>>>> cfbdfd45827f72c3a0cf01f37e10bafc02c8404c
   box.append(ecoscore);
 
   checkHighScore(
