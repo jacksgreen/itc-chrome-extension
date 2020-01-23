@@ -8,7 +8,9 @@
   },
   "content_scripts": [
     {
-      "matches": ["https://www.amazon.com/adidas-Originals-Trefoil-Shirt-White/*"],
+      "matches": ["https://www.amazon.com/Levis*",
+        "https://www.amazon.com/Lacoste-Sleeve-V-Neck-Cotton-T-Shirt/*",
+        "https://www.amazon.com/Nike-drifit-Cotton-Solid-XX-Large/*"],
       "js": ["content.js"]
     }
   ],

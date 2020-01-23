@@ -27,10 +27,6 @@ function checkHighScore(main, test1, test2, test3) {
 function displayData(res) {
   box = document.getElementById('content-box');
 
-  brand = document.createElement('div');
-  brand.textContent = 'Brand: ' + res.data.mainProduct.brand;
-  box.append(brand);
-
   cot_pcth = document.createElement('div');
   cot_pcth.textContent =
     'Cotton: ' + res.data.mainProduct.cot_pcth.toFixed(0) + '%';
