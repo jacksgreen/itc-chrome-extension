@@ -21,3 +21,5 @@ chrome.runtime.onMessage.addListener(async (request, sender, sendResponse) => {
   const jsonData = await response;
   sendResponse({ data: jsonData, url: window.location.href });
 });
+
+// ?
