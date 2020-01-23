@@ -40,7 +40,7 @@ function displayData(res) {
   box.append(type);
 
   ecoscore = document.createElement('div');
-  ecoscore.textContent = 'Ecoscore: ' + res.data.mainProduct.ecoscore;
+  ecoscore.textContent = 'WingSpan: ' + res.data.mainProduct.ecoscore;
   box.append(ecoscore);
 
   checkHighScore(
