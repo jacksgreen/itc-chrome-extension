@@ -4,11 +4,11 @@
   "description": "Check how environmentally friendly your next purchase is!",
   "version": "1.0",
   "icons": {
-    "128": "tree_icon.png"
+    "128": "origami.png"
   },
   "content_scripts": [
     {
-      "matches": ["https://www.amazon.com/*", "https://www.amazon.co.uk/*"],
+      "matches": ["https://www.amazon.com/adidas-Originals-Trefoil-Shirt-White/*"],
       "js": ["content.js"]
     }
   ],
